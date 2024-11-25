@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amoba</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #jatekter {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            gap: 5px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .mezo {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .foglalt {
+            pointer-events: none;
+        }
+        #ujJatek {
+            display: none;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #ujJatek:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Amoba Jatek</h1>
+    <div id="jatekter"></div>
+    <div id="eredmeny"></div>
+    <button id="ujJatek">Uj Jatek</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
